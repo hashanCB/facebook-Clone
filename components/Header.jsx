@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className=' max-w-screen bg-white shadow-2xl h-[55px] flex flex-row pl-2 '>
+    <div className='fixed top-0 left-0 w-full z-50  max-w-screen bg-white shadow-2xl h-[55px] flex flex-row pl-2 '>
 
 
     <div className='flex flex-3/12 bg-white gap-2  items-center pl-2  '>
@@ -20,7 +20,7 @@ const Header = () => {
     <input 
         type='text' 
         placeholder='Search Facebook'  
-        className='flex-grow flex-shrink-0 bg-transparent focus:outline-none text-gray-800' 
+        className='lg:flex-grow lg:flex-shrink-0 sm:hidden hidden md:hidden  bg-transparent focus:outline-none text-gray-800' 
     />
     </div>
 
@@ -30,26 +30,26 @@ const Header = () => {
 
 
 
-    <div className=' flex flex-6/12 gap-x-10 justify-center items-center'> 
-    <div className=' flex w-25 justify-center border-b-[#0766ff] border-b-4  h-full relative group'>
+    <div className='  hidden md:flex lg:flex   sm:hidden  flex-6/12 gap-x-10 justify-center items-center'> 
+    <div className=' flex  sm:w-12  md:w-16 lg:w-20  justify-center border-b-[#0766ff] border-b-4  h-full relative group'>
     <Home className=' text-[#0766ff] h-full w-6'/> 
     <span className=' absolute hidden -bottom-10 left-5.5 bg-zinc-500 text-white p-1 rounded-xl group-hover:block'>Home</span>
     </div>
   
-    <div className=' flex w-25 justify-center  h-full relative group'>
+    <div className=' flex sm:w-12 md:w-16 lg:w-20  justify-center  h-full relative group'>
     <UsersRound className=' text-gray-500 h-full w-6'/> 
     <span className=' absolute hidden -bottom-10 left-5.5 bg-zinc-500 text-white p-1 rounded-xl group-hover:block'>Friends</span>
     </div>
 
-    <div className=' flex w-25 justify-center  h-full relative group'>
+    <div className=' flexsm:w-12 md:w-16 lg:w-20  justify-center  h-full relative group'>
     <TvMinimalPlay className=' text-gray-500 h-full w-6'/> 
     <span className=' absolute hidden -bottom-10 left-5.5 bg-zinc-500 text-white p-1 rounded-xl group-hover:block'>Videos</span>
     </div>
-    <div className=' flex w-25 justify-center  h-full relative group'>
+    <div className=' flex sm:w-12 md:w-16 lg:w-20  justify-center  h-full relative group'>
     <Store className=' text-gray-500 h-full w-6'/> 
     <span className=' absolute hidden -bottom-10 left-2 bg-zinc-500 text-white p-1 rounded-xl group-hover:block'>Marketplace</span>
     </div>
-    <div className=' flex w-25justify-center  h-full relative group'>
+    <div className=' flex sm:w-12 md:w-16 lg:w-20 justify-center  h-full relative group'>
     <Gamepad2 className=' text-gray-500 h-full w-6'/> 
     <span className=' absolute hidden -bottom-10 -left-3 bg-zinc-500 text-white p-1 rounded-xl group-hover:block'>Games</span>
     </div>
